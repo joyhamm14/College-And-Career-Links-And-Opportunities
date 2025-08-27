@@ -4,7 +4,7 @@ import type React from "react"
 import { useMemo, useState } from "react"
 
 export default function CollegeAndCareerLinks() {
-  const [lang, setLang] = useState("en")
+const [lang, setLang] = useState<"en" | "es">("en")
   const t = useMemo(() => (lang === "en" ? en : es), [lang])
 
   return (
